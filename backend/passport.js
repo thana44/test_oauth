@@ -7,7 +7,7 @@ const OAuth2Strategy = require("passport-google-oauth2").Strategy;
 passport.use(new OAuth2Strategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "/auth/google/callback",
+    callbackURL: "https://testoauthnongp.onrender.com/auth/google/callback",
     scope: ['profile', 'email'],
     passReqToCallback: true
   },
